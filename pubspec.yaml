@@ -37,7 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   image_picker: 1.1.2
   file_saver:
-    path: ../_LIBRARY/file_saver-0.2.13
+    path: _LIBRARY/file_saver-0.2.13
 
 dev_dependencies:
   flutter_test:
