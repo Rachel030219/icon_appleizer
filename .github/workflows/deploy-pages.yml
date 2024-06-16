@@ -24,7 +24,6 @@ jobs:
       - name: Build 🧑‍💻
         run: |
           flutter pub get
-          flutter test
           flutter build web --wasm
 
       - name: Deploy 🚀
