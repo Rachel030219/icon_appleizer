@@ -1,0 +1,33 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - master
+permissions:
+  contents: write
+jobs:
+  build-and-deploy-pages:
+    concurrency: ci-${{ github.ref }}
+    runs-on: ubuntu-latest
+    environment:
+      name: deploy-pages
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+        
+      - name: Set up Flutter 🛠
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          
+      - name: Build 🧑‍💻
+        run: |
+          flutter pub get
+          flutter test
+          flutter build web --wasm
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build/web
+      
