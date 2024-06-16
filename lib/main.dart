@@ -162,14 +162,10 @@ class _MyHomePageState extends State<MyHomePage> {
   void computeAndShowImage() async {
     setState(() {
       imageWidgets = [
-        const Padding(
-            padding: EdgeInsets.symmetric(vertical: 4.0, horizontal: 0.0)),
         imageOriginalWidget,
         const Padding(
             padding: EdgeInsets.symmetric(vertical: 4.0, horizontal: 0.0)),
         imageLoadingWidget,
-        const Padding(
-            padding: EdgeInsets.symmetric(vertical: 4.0, horizontal: 0.0)),
       ];
     });
     if (currentImage != null) {
@@ -196,14 +192,10 @@ class _MyHomePageState extends State<MyHomePage> {
         _imagePainter.image = modifiedImage;
         setState(() {
           imageWidgets = [
-            const Padding(
-                padding: EdgeInsets.symmetric(vertical: 4.0, horizontal: 0.0)),
             imageOriginalWidget,
             const Padding(
                 padding: EdgeInsets.symmetric(vertical: 4.0, horizontal: 0.0)),
             imageCanvasWidget,
-            const Padding(
-                padding: EdgeInsets.symmetric(vertical: 4.0, horizontal: 0.0)),
           ];
         });
       }
