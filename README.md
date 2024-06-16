@@ -4,7 +4,7 @@ A Flutter app that can make your icon look like tinted by iOS 18.
 
 ## How to use
 
-Just head to [GitHub Pages](http://rachel030219.github.io/icon_appleizer) and you'll see the app. You can also build yourself or download the artifacts from GitHub Actions. Note that currently this app is only tested on macOS and web, and extra permission and modification might be needed on other platforms.
+Just head to [GitHub Pages](https://apple.rachelt.one) and you'll see the app. You can also build yourself or download the artifacts from GitHub Actions. Note that currently this app is only tested on macOS and web, and extra permission and modification might be needed on other platforms.
 
 ## Build
 
